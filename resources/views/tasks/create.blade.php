@@ -9,12 +9,12 @@
             
                 <div class="form-group">
                     {!! Form::label('content', 'タスク内容:') !!}
-                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('content', old('content'), ['class' => 'form-control']) !!}
                 </div>
                 
                 <div class="form-group">
                     {!! Form::label('status', '状態:') !!}
-                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('status', old('content'), ['class' => 'form-control']) !!}
                 </div>
                 
                 {!! Form::submit('作成', ['class' => 'btn btn-primary']) !!}
